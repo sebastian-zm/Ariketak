@@ -1,0 +1,8 @@
+url: "https://sebastian-zm.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/javascript_ariketak" # the subpath of your site, e.g. /blog
+title: "javascript ariketak" # the name of your site, e.g. ACME Corp.
+lang: "eu"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
