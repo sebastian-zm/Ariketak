@@ -7,7 +7,6 @@ export function createMovingSquare() {
   
   Object.assign(square, {
     color: "#000000",
-    backgroundColor: "#ffffff",
     size: 10,
     
     draw: function(context) {
