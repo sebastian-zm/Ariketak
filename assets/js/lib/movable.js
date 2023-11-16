@@ -4,7 +4,6 @@ export function createMovable() {
   const movable = {
     position: math.matrix([0, 0]),
     velocity: math.matrix([0, 0]),
-    maxVelocity: 1000,
     acceleration: math.matrix([0, 0]),
     
     move(timeElapsed) {
