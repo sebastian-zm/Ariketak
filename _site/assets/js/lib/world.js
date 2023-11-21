@@ -15,22 +15,21 @@ export function createWorld() {
         if ("position" in member) {
           if ("collide" in member) {
             if (member.position.get([0]) < 0) {
-              member.collide(math.matrix([1, 0]))
+              member.collide(math.matrix([1, 0]), 0.9)
               math.subset(member.position, math.index(0), 0)
             }
             if (member.position.get([1]) < 0) {
-              member.collide(math.matrix([0, 1]))
+              member.collide(math.matrix([0, 1]), 0.9)
               math.subset(member.position, math.index(1), 0)
             }
             if (member.position.get([0]) > canvas.width) {
-              member.collide(math.matrix([-1, 0]))
+              member.collide(math.matrix([-1, 0]), 0.9)
               math.subset(member.position, math.index(1), canvas.width)
             }
             if (member.position.get([1]) > canvas.height) {
-              member.collide(math.matrix([0, -1]))
+              member.collide(math.matrix([0, -1]), 0.9)
               
               math.subset(member.position, math.index(1), canvas.height)
-              debugger
             }
           }
         }
